@@ -13,7 +13,7 @@
 
 float elapsed(struct timeval before, struct timeval after)
 {
-  float ans = (float) after.tv_sec - (float) before.tv_sec;
+  float ans = (float) (after.tv_sec - before.tv_sec);
   ans += ((float) (after.tv_usec - before.tv_usec)) / 1000000;
   return ans;
 }
