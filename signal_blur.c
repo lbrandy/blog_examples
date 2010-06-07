@@ -18,7 +18,7 @@ void naive(float* in, float* out)
   }
 }
 
-void naive_restrict(float *__restrict__ in, float *__restrict__ out)
+void naive_restrict(float *restrict in, float *restrict out)
 {
   int i,j;
   for (i=0;i<LENGTH-4;i++)
